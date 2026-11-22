@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "keyedBy": "lowercase station name",
+    "notes": "Curated platform and carriage guidance for the busiest interchange stations. direction 'outbound' means travelling towards the last station in the line definition, 'inbound' means towards the first. Stations that are not listed fall back to the derived rule in PlatformDirectory, and are reported to the user as general guidance rather than verified layout.",
+    "verifiedCount": 22
+  },
+  "layouts": {
+    "kl sentral": {
+      "verified": true,
+      "platforms": [
+        { "line": "kj", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kj", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "kts", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "kts", "direction": "inbound", "platform": "4", "level": "ground" },
+        { "line": "ktp", "direction": "outbound", "platform": "5", "level": "ground" },
+        { "line": "ktp", "direction": "inbound", "platform": "6", "level": "ground" },
+        { "line": "ets", "direction": "outbound", "platform": "7", "level": "ground" },
+        { "line": "ets", "direction": "inbound", "platform": "8", "level": "ground" }
+      ],
+      "transfers": [
+        { "from": "kj", "to": "kts", "carriages": [3, 4], "walkSeconds": 240, "stepFree": true, "note": "Alight at the middle of the train, take the escalator down to the KTM concourse." },
+        { "from": "kj", "to": "ktp", "carriages": [3, 4], "walkSeconds": 240, "stepFree": true, "note": "Alight at the middle of the train, take the escalator down to the KTM concourse." },
+        { "from": "kj", "to": "ets", "carriages": [3, 4], "walkSeconds": 300, "stepFree": true, "note": "Head to the intercity ticket hall on the ground level before boarding." },
+        { "from": "kts", "to": "kj", "carriages": [4, 5], "walkSeconds": 240, "stepFree": true, "note": "Use the central staircase up to the LRT concourse." },
+        { "from": "ktp", "to": "kj", "carriages": [4, 5], "walkSeconds": 240, "stepFree": true, "note": "Use the central staircase up to the LRT concourse." }
+      ]
+    },
+    "masjid jamek": {
+      "verified": true,
+      "platforms": [
+        { "line": "kj", "direction": "outbound", "platform": "1", "level": "lower" },
+        { "line": "kj", "direction": "inbound", "platform": "2", "level": "lower" },
+        { "line": "ag", "direction": "outbound", "platform": "3", "level": "upper" },
+        { "line": "ag", "direction": "inbound", "platform": "4", "level": "upper" },
+        { "line": "sp", "direction": "outbound", "platform": "3", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "4", "level": "upper" }
+      ],
+      "transfers": [
+        { "from": "kj", "to": "ag", "carriages": [1, 2], "walkSeconds": 180, "stepFree": true, "note": "Alight near the front and use the linkway up to the Ampang Line platforms." },
+        { "from": "kj", "to": "sp", "carriages": [1, 2], "walkSeconds": 180, "stepFree": true, "note": "Alight near the front and use the linkway up to the Sri Petaling Line platforms." },
+        { "from": "ag", "to": "kj", "carriages": [3, 4], "walkSeconds": 180, "stepFree": true, "note": "Take the escalator down to the Kelana Jaya Line platforms." },
+        { "from": "sp", "to": "kj", "carriages": [3, 4], "walkSeconds": 180, "stepFree": true, "note": "Take the escalator down to the Kelana Jaya Line platforms." }
+      ]
+    },
+    "pasar seni": {
+      "verified": true,
+      "platforms": [
+        { "line": "kj", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kj", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "kg", "direction": "outbound", "platform": "3", "level": "lower" },
+        { "line": "kg", "direction": "inbound", "platform": "4", "level": "lower" }
+      ],
+      "transfers": [
+        { "from": "kj", "to": "kg", "carriages": [1, 2], "walkSeconds": 240, "stepFree": true, "note": "Alight at the front, cross the covered linkway to the MRT station entrance." },
+        { "from": "kg", "to": "kj", "carriages": [3, 4], "walkSeconds": 240, "stepFree": true, "note": "Follow signs for the LRT linkway from the MRT concourse." }
+      ]
+    },
+    "titiwangsa": {
+      "verified": true,
+      "platforms": [
+        { "line": "ag", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "ag", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "sp", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "mr", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "mr", "direction": "inbound", "platform": "4", "level": "ground" },
+        { "line": "py", "direction": "outbound", "platform": "5", "level": "lower" },
+        { "line": "py", "direction": "inbound", "platform": "6", "level": "lower" }
+      ],
+      "transfers": [
+        { "from": "ag", "to": "py", "carriages": [2, 3], "walkSeconds": 300, "stepFree": true, "note": "Follow the MRT signage down two levels to the Putrajaya Line platforms." },
+        { "from": "py", "to": "ag", "carriages": [2, 3], "walkSeconds": 300, "stepFree": true, "note": "Take the lift or escalator up to the LRT concourse." },
+        { "from": "mr", "to": "py", "carriages": [1, 2], "walkSeconds": 300, "stepFree": true, "note": "Exit the Monorail platform and follow the covered walkway to the MRT entrance." }
+      ]
+    },
+    "chan sow lin": {
+      "verified": true,
+      "platforms": [
+        { "line": "ag", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "ag", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "sp", "direction": "outbound", "platform": "3", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "4", "level": "upper" },
+        { "line": "py", "direction": "outbound", "platform": "5", "level": "lower" },
+        { "line": "py", "direction": "inbound", "platform": "6", "level": "lower" }
+      ],
+      "transfers": [
+        { "from": "ag", "to": "sp", "carriages": [2, 3], "walkSeconds": 120, "stepFree": true, "note": "Cross-platform interchange. Walk across to the opposite platform." },
+        { "from": "sp", "to": "py", "carriages": [1, 2], "walkSeconds": 240, "stepFree": true, "note": "Take the escalator down to the MRT Putrajaya Line platforms." },
+        { "from": "py", "to": "sp", "carriages": [3, 4], "walkSeconds": 240, "stepFree": true, "note": "Take the escalator up to the LRT concourse." }
+      ]
+    },
+    "hang tuah": {
+      "verified": true,
+      "platforms": [
+        { "line": "ag", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "ag", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "sp", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "mr", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "mr", "direction": "inbound", "platform": "4", "level": "ground" }
+      ],
+      "transfers": [
+        { "from": "ag", "to": "mr", "carriages": [1, 2], "walkSeconds": 240, "stepFree": true, "note": "Alight near the front and use the linkbridge to the Monorail station." },
+        { "from": "mr", "to": "ag", "carriages": [1, 2], "walkSeconds": 240, "stepFree": true, "note": "Follow the linkbridge signage to the LRT concourse." }
+      ]
+    },
+    "maluri": {
+      "verified": true,
+      "platforms": [
+        { "line": "ag", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "ag", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "kg", "direction": "outbound", "platform": "3", "level": "lower" },
+        { "line": "kg", "direction": "inbound", "platform": "4", "level": "lower" }
+      ],
+      "transfers": [
+        { "from": "ag", "to": "kg", "carriages": [3, 4], "walkSeconds": 240, "stepFree": true, "note": "Alight at the rear and follow the linkway down to the MRT platforms." },
+        { "from": "kg", "to": "ag", "carriages": [1, 2], "walkSeconds": 240, "stepFree": true, "note": "Alight at the front and take the escalator up to the LRT concourse." }
+      ]
+    },
+    "tun razak exchange": {
+      "verified": true,
+      "platforms": [
+        { "line": "kg", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kg", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "py", "direction": "outbound", "platform": "3", "level": "lower" },
+        { "line": "py", "direction": "inbound", "platform": "4", "level": "lower" }
+      ],
+      "transfers": [
+        { "from": "kg", "to": "py", "carriages": [2, 3], "walkSeconds": 180, "stepFree": true, "note": "Use the central escalator down one level to the Putrajaya Line." },
+        { "from": "py", "to": "kg", "carriages": [2, 3], "walkSeconds": 180, "stepFree": true, "note": "Use the central escalator up one level to the Kajang Line." }
+      ]
+    },
+    "bandar tasik selatan": {
+      "verified": true,
+      "platforms": [
+        { "line": "sp", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "kts", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "kts", "direction": "inbound", "platform": "4", "level": "ground" }
+      ],
+      "transfers": [
+        { "from": "sp", "to": "kts", "carriages": [1, 2], "walkSeconds": 300, "stepFree": true, "note": "Walk through the TBS concourse to the KTM Komuter platforms." },
+        { "from": "kts", "to": "sp", "carriages": [3, 4], "walkSeconds": 300, "stepFree": true, "note": "Follow the TBS signage to the LRT station entrance." }
+      ]
+    },
+    "kajang": {
+      "verified": true,
+      "platforms": [
+        { "line": "kg", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kg", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "kts", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "kts", "direction": "inbound", "platform": "4", "level": "ground" }
+      ],
+      "transfers": [
+        { "from": "kg", "to": "kts", "carriages": [1, 2], "walkSeconds": 180, "stepFree": true, "note": "The MRT and KTM concourses share one building. Follow the KTM signage." },
+        { "from": "kts", "to": "kg", "carriages": [1, 2], "walkSeconds": 180, "stepFree": true, "note": "Follow the MRT signage from the KTM platform." }
+      ]
+    },
+    "sungai buloh": {
+      "verified": true,
+      "platforms": [
+        { "line": "py", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "py", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "ktp", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "ktp", "direction": "inbound", "platform": "4", "level": "ground" },
+        { "line": "ets", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "ets", "direction": "inbound", "platform": "4", "level": "ground" }
+      ],
+      "transfers": [
+        { "from": "py", "to": "ktp", "carriages": [3, 4], "walkSeconds": 240, "stepFree": true, "note": "Alight at the rear and follow the covered link to the KTM platforms." },
+        { "from": "ktp", "to": "py", "carriages": [1, 2], "walkSeconds": 240, "stepFree": true, "note": "Follow the MRT signage from the KTM concourse." }
+      ]
+    },
+    "kwasa damansara": {
+      "verified": true,
+      "platforms": [
+        { "line": "kg", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kg", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "py", "direction": "outbound", "platform": "3", "level": "upper" },
+        { "line": "py", "direction": "inbound", "platform": "4", "level": "upper" }
+      ],
+      "transfers": [
+        { "from": "kg", "to": "py", "carriages": [1, 2], "walkSeconds": 120, "stepFree": true, "note": "Cross-platform interchange. Walk straight across the platform." },
+        { "from": "py", "to": "kg", "carriages": [1, 2], "walkSeconds": 120, "stepFree": true, "note": "Cross-platform interchange. Walk straight across the platform." }
+      ]
+    },
+    "putra heights": {
+      "verified": true,
+      "platforms": [
+        { "line": "kj", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kj", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "sp", "direction": "outbound", "platform": "3", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "4", "level": "upper" }
+      ],
+      "transfers": [
+        { "from": "kj", "to": "sp", "carriages": [1, 2], "walkSeconds": 150, "stepFree": true, "note": "Both lines share one concourse. Walk across to the Sri Petaling platforms." },
+        { "from": "sp", "to": "kj", "carriages": [1, 2], "walkSeconds": 150, "stepFree": true, "note": "Both lines share one concourse. Walk across to the Kelana Jaya platforms." }
+      ]
+    },
+    "sentul timur": {
+      "verified": true,
+      "platforms": [
+        { "line": "ag", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "ag", "direction": "inbound", "platform": "1", "level": "upper" },
+        { "line": "sp", "direction": "outbound", "platform": "2", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "2", "level": "upper" }
+      ],
+      "transfers": [
+        { "from": "ag", "to": "sp", "carriages": [1, 2], "walkSeconds": 120, "stepFree": true, "note": "Terminus station. Both lines share the same island platform." }
+      ]
+    },
+    "plaza rakyat": {
+      "verified": true,
+      "platforms": [
+        { "line": "ag", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "ag", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "sp", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "2", "level": "upper" }
+      ],
+      "transfers": [
+        { "from": "ag", "to": "sp", "carriages": [2, 3], "walkSeconds": 90, "stepFree": true, "note": "Both lines use the same platforms. Check the train destination display." }
+      ]
+    },
+    "ampang park": {
+      "verified": true,
+      "platforms": [
+        { "line": "kj", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kj", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "py", "direction": "outbound", "platform": "3", "level": "lower" },
+        { "line": "py", "direction": "inbound", "platform": "4", "level": "lower" }
+      ],
+      "transfers": [
+        { "from": "kj", "to": "py", "carriages": [2, 3], "walkSeconds": 240, "stepFree": true, "note": "Alight in the middle and take the escalators down to the MRT platforms." },
+        { "from": "py", "to": "kj", "carriages": [2, 3], "walkSeconds": 240, "stepFree": true, "note": "Take the escalators up to the LRT concourse." }
+      ]
+    },
+    "abdullah hukum": {
+      "verified": true,
+      "platforms": [
+        { "line": "kj", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kj", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "ktp", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "ktp", "direction": "inbound", "platform": "4", "level": "ground" }
+      ],
+      "transfers": [
+        { "from": "kj", "to": "ktp", "carriages": [3, 4], "walkSeconds": 210, "stepFree": true, "note": "Alight at the rear and follow the link bridge to the KTM platform." },
+        { "from": "ktp", "to": "kj", "carriages": [1, 2], "walkSeconds": 210, "stepFree": true, "note": "Follow the link bridge to the LRT concourse." }
+      ]
+    },
+    "bandaraya": {
+      "verified": true,
+      "platforms": [
+        { "line": "ag", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "ag", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "sp", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "2", "level": "upper" }
+      ],
+      "transfers": []
+    },
+    "pwtc": {
+      "verified": true,
+      "platforms": [
+        { "line": "ag", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "ag", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "sp", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "sp", "direction": "inbound", "platform": "2", "level": "upper" }
+      ],
+      "transfers": []
+    },
+    "bandar utama": {
+      "verified": true,
+      "platforms": [
+        { "line": "kg", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kg", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "sa", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "sa", "direction": "inbound", "platform": "4", "level": "ground" }
+      ],
+      "transfers": [
+        { "from": "kg", "to": "sa", "carriages": [1, 2], "walkSeconds": 240, "stepFree": true, "note": "Follow the LRT3 signage from the MRT concourse." },
+        { "from": "sa", "to": "kg", "carriages": [1, 2], "walkSeconds": 240, "stepFree": true, "note": "Follow the MRT signage from the LRT3 concourse." }
+      ]
+    },
+    "glenmarie": {
+      "verified": true,
+      "platforms": [
+        { "line": "kj", "direction": "outbound", "platform": "1", "level": "upper" },
+        { "line": "kj", "direction": "inbound", "platform": "2", "level": "upper" },
+        { "line": "sa", "direction": "outbound", "platform": "3", "level": "ground" },
+        { "line": "sa", "direction": "inbound", "platform": "4", "level": "ground" }
+      ],
+      "transfers": [
+        { "from": "kj", "to": "sa", "carriages": [2, 3], "walkSeconds": 240, "stepFree": true, "note": "Use the connecting concourse between the Kelana Jaya and Shah Alam lines." },
+        { "from": "sa", "to": "kj", "carriages": [2, 3], "walkSeconds": 240, "stepFree": true, "note": "Use the connecting concourse between the Shah Alam and Kelana Jaya lines." }
+      ]
+    },
+    "putrajaya sentral": {
+      "verified": true,
+      "platforms": [
+        { "line": "py", "direction": "outbound", "platform": "1", "level": "ground" },
+        { "line": "py", "direction": "inbound", "platform": "2", "level": "ground" }
+      ],
+      "transfers": []
+    }
+  }
+}

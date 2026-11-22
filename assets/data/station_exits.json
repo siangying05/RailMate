@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "keyedBy": "lowercase station name",
+    "notes": "Curated station exit directory used by the exit recommendation engine. Landmarks are matched against the destination text entered by the user. Stations not listed here fall back to a generic main exit."
+  },
+  "exits": {
+    "kl sentral": [
+      { "code": "A", "name": "Nu Sentral Mall", "walkMinutes": 2, "stepFree": true, "landmarks": ["Nu Sentral", "Shopping", "Hilton Kuala Lumpur", "Le Meridien", "Aloft"] },
+      { "code": "B", "name": "Bus and Taxi Concourse", "walkMinutes": 3, "stepFree": true, "landmarks": ["Bus Terminal", "Taxi", "Airport Coach", "Grab Pickup"] },
+      { "code": "C", "name": "Jalan Tun Sambanthan", "walkMinutes": 4, "stepFree": false, "landmarks": ["Brickfields", "Little India", "YMCA", "Temple"] },
+      { "code": "D", "name": "Monorail Link Bridge", "walkMinutes": 6, "stepFree": true, "landmarks": ["Monorail", "KL Sentral Monorail"] }
+    ],
+    "klcc": [
+      { "code": "A", "name": "Suria KLCC", "walkMinutes": 2, "stepFree": true, "landmarks": ["Suria KLCC", "Petronas Twin Towers", "KLCC Park", "Aquaria", "Shopping", "Petrosains"] },
+      { "code": "B", "name": "Avenue K", "walkMinutes": 3, "stepFree": true, "landmarks": ["Avenue K", "Jalan Ampang", "Menara Public Bank"] },
+      { "code": "C", "name": "Jalan Perak", "walkMinutes": 4, "stepFree": false, "landmarks": ["Jalan Perak", "Traders Hotel", "Menara Maxis"] }
+    ],
+    "bukit bintang": [
+      { "code": "A", "name": "Pavilion Kuala Lumpur", "walkMinutes": 2, "stepFree": true, "landmarks": ["Pavilion", "Jalan Bukit Bintang", "Starhill", "Shopping"] },
+      { "code": "B", "name": "Lot 10 and Sungei Wang", "walkMinutes": 3, "stepFree": true, "landmarks": ["Lot 10", "Sungei Wang", "Low Yat Plaza", "BB Plaza", "Berjaya Times Square"] },
+      { "code": "C", "name": "Jalan Alor and Changkat", "walkMinutes": 5, "stepFree": false, "landmarks": ["Jalan Alor", "Changkat Bukit Bintang", "Food Street", "Nightlife"] },
+      { "code": "D", "name": "Fahrenheit 88", "walkMinutes": 3, "stepFree": true, "landmarks": ["Fahrenheit 88", "Sephora", "Uniqlo"] }
+    ],
+    "masjid jamek": [
+      { "code": "A", "name": "Jalan Tun Perak", "walkMinutes": 2, "stepFree": true, "landmarks": ["Masjid Jamek Mosque", "Jalan Tun Perak", "Sultan Abdul Samad Building"] },
+      { "code": "B", "name": "Medan Pasar", "walkMinutes": 3, "stepFree": false, "landmarks": ["Medan Pasar", "Old Market Square", "Chinatown"] },
+      { "code": "C", "name": "Dataran Merdeka", "walkMinutes": 6, "stepFree": true, "landmarks": ["Dataran Merdeka", "Merdeka Square", "River of Life", "Textile Museum"] }
+    ],
+    "pasar seni": [
+      { "code": "A", "name": "Central Market", "walkMinutes": 2, "stepFree": true, "landmarks": ["Central Market", "Pasar Seni", "Kasturi Walk", "Handicraft"] },
+      { "code": "B", "name": "Petaling Street", "walkMinutes": 5, "stepFree": false, "landmarks": ["Petaling Street", "Chinatown", "Sri Mahamariamman Temple", "Night Market"] },
+      { "code": "C", "name": "Bus Hub and Klang River", "walkMinutes": 3, "stepFree": true, "landmarks": ["Pasar Seni Bus Hub", "GOKL Bus", "River of Life"] }
+    ],
+    "muzium negara": [
+      { "code": "A", "name": "National Museum", "walkMinutes": 3, "stepFree": true, "landmarks": ["National Museum", "Muzium Negara", "Perdana Botanical Garden"] },
+      { "code": "B", "name": "KL Sentral Link", "walkMinutes": 5, "stepFree": true, "landmarks": ["KL Sentral", "Nu Sentral"] }
+    ],
+    "titiwangsa": [
+      { "code": "A", "name": "Titiwangsa Lake Gardens", "walkMinutes": 4, "stepFree": true, "landmarks": ["Titiwangsa Lake", "Taman Tasik Titiwangsa", "Istana Budaya"] },
+      { "code": "B", "name": "Hospital Kuala Lumpur", "walkMinutes": 8, "stepFree": true, "landmarks": ["Hospital Kuala Lumpur", "HKL", "National Art Gallery"] },
+      { "code": "C", "name": "Bus and Monorail Interchange", "walkMinutes": 3, "stepFree": true, "landmarks": ["Monorail", "Bus Terminal"] }
+    ],
+    "bandar tasik selatan": [
+      { "code": "A", "name": "Terminal Bersepadu Selatan", "walkMinutes": 3, "stepFree": true, "landmarks": ["TBS", "Terminal Bersepadu Selatan", "Express Bus", "Interstate Bus"] },
+      { "code": "B", "name": "KTM Komuter Platform", "walkMinutes": 4, "stepFree": true, "landmarks": ["KTM Komuter", "Komuter"] },
+      { "code": "C", "name": "Taman Connaught", "walkMinutes": 6, "stepFree": false, "landmarks": ["Taman Connaught", "Residential"] }
+    ],
+    "kajang": [
+      { "code": "A", "name": "Kajang Town Centre", "walkMinutes": 4, "stepFree": true, "landmarks": ["Kajang Satay", "Kajang Town", "Plaza Metro Kajang"] },
+      { "code": "B", "name": "KTM Komuter Interchange", "walkMinutes": 2, "stepFree": true, "landmarks": ["KTM Komuter", "Komuter"] }
+    ],
+    "bukit jalil": [
+      { "code": "A", "name": "Pavilion Bukit Jalil", "walkMinutes": 5, "stepFree": true, "landmarks": ["Pavilion Bukit Jalil", "Shopping"] },
+      { "code": "B", "name": "National Sports Complex", "walkMinutes": 8, "stepFree": true, "landmarks": ["Bukit Jalil Stadium", "National Stadium", "Axiata Arena", "Concert"] }
+    ],
+    "abdullah hukum": [
+      { "code": "A", "name": "Mid Valley Link Bridge", "walkMinutes": 8, "stepFree": true, "landmarks": ["Mid Valley Megamall", "The Gardens Mall", "Shopping"] },
+      { "code": "B", "name": "KL Eco City", "walkMinutes": 4, "stepFree": true, "landmarks": ["KL Eco City", "Menara Ecocity", "Office"] }
+    ],
+    "mid valley": [
+      { "code": "A", "name": "Mid Valley Megamall", "walkMinutes": 3, "stepFree": true, "landmarks": ["Mid Valley Megamall", "The Gardens Mall", "Cinema", "Shopping"] },
+      { "code": "B", "name": "Jalan Syed Putra", "walkMinutes": 5, "stepFree": false, "landmarks": ["Boulevard Hotel", "Office Tower"] }
+    ],
+    "bangsar": [
+      { "code": "A", "name": "Bangsar Village", "walkMinutes": 10, "stepFree": true, "landmarks": ["Bangsar Village", "Telawi", "Cafe", "Restaurant"] },
+      { "code": "B", "name": "Jalan Maarof", "walkMinutes": 6, "stepFree": true, "landmarks": ["Jalan Maarof", "Bangsar Shopping Centre"] }
+    ],
+    "universiti": [
+      { "code": "A", "name": "Universiti Malaya", "walkMinutes": 9, "stepFree": true, "landmarks": ["Universiti Malaya", "UM", "University", "Campus"] },
+      { "code": "B", "name": "Pantai Dalam", "walkMinutes": 5, "stepFree": false, "landmarks": ["Pantai Dalam", "Residential"] }
+    ],
+    "upm": [
+      { "code": "A", "name": "UPM Main Campus", "walkMinutes": 7, "stepFree": true, "landmarks": ["Universiti Putra Malaysia", "UPM", "University", "Campus"] },
+      { "code": "B", "name": "Hospital Serdang", "walkMinutes": 10, "stepFree": true, "landmarks": ["Hospital Serdang", "Clinic"] }
+    ],
+    "tun razak exchange": [
+      { "code": "A", "name": "The Exchange TRX", "walkMinutes": 3, "stepFree": true, "landmarks": ["The Exchange TRX", "TRX", "TRX Mall", "Shopping"] },
+      { "code": "B", "name": "Jalan Tun Razak", "walkMinutes": 4, "stepFree": true, "landmarks": ["Jalan Tun Razak", "Office Tower", "Menara Prudential"] }
+    ],
+    "maluri": [
+      { "code": "A", "name": "Sunway Velocity Mall", "walkMinutes": 3, "stepFree": true, "landmarks": ["Sunway Velocity", "Shopping", "Cinema"] },
+      { "code": "B", "name": "Taman Maluri", "walkMinutes": 5, "stepFree": false, "landmarks": ["Taman Maluri", "AEON Taman Maluri"] }
+    ],
+    "cochrane": [
+      { "code": "A", "name": "MyTOWN Shopping Centre", "walkMinutes": 2, "stepFree": true, "landmarks": ["MyTOWN", "IKEA Cheras", "Shopping"] },
+      { "code": "B", "name": "Jalan Cochrane", "walkMinutes": 5, "stepFree": false, "landmarks": ["Jalan Cochrane", "Residential"] }
+    ],
+    "bandar utama": [
+      { "code": "A", "name": "1 Utama Shopping Centre", "walkMinutes": 4, "stepFree": true, "landmarks": ["1 Utama", "One Utama", "Shopping", "Cinema"] },
+      { "code": "B", "name": "Bandar Utama Township", "walkMinutes": 6, "stepFree": true, "landmarks": ["Bandar Utama", "Residential"] }
+    ],
+    "mutiara damansara": [
+      { "code": "A", "name": "The Curve and IKEA", "walkMinutes": 3, "stepFree": true, "landmarks": ["The Curve", "IKEA Damansara", "eCurve", "Shopping"] },
+      { "code": "B", "name": "Cineleisure", "walkMinutes": 5, "stepFree": true, "landmarks": ["Cineleisure", "Cinema"] }
+    ],
+    "ampang park": [
+      { "code": "A", "name": "Intermark Mall", "walkMinutes": 3, "stepFree": true, "landmarks": ["Intermark", "Doubletree Hilton", "Office"] },
+      { "code": "B", "name": "Jalan Ampang Embassy Row", "walkMinutes": 5, "stepFree": true, "landmarks": ["Embassy", "Jalan Ampang"] }
+    ],
+    "sungai buloh": [
+      { "code": "A", "name": "Sungai Buloh Town", "walkMinutes": 5, "stepFree": true, "landmarks": ["Sungai Buloh Town", "Market"] },
+      { "code": "B", "name": "KTM and MRT Interchange", "walkMinutes": 3, "stepFree": true, "landmarks": ["KTM Komuter", "MRT", "ETS"] }
+    ],
+    "putrajaya sentral": [
+      { "code": "A", "name": "Putrajaya Bus Terminal", "walkMinutes": 2, "stepFree": true, "landmarks": ["Bus Terminal", "Nadi Putra"] },
+      { "code": "B", "name": "Government Precinct", "walkMinutes": 8, "stepFree": true, "landmarks": ["Government Office", "Putrajaya", "Ministry"] }
+    ],
+    "batu caves": [
+      { "code": "A", "name": "Batu Caves Temple", "walkMinutes": 4, "stepFree": false, "landmarks": ["Batu Caves", "Murugan Statue", "Temple", "Cave"] },
+      { "code": "B", "name": "Jalan Batu Caves", "walkMinutes": 6, "stepFree": true, "landmarks": ["Bus Stop", "Market"] }
+    ],
+    "subang jaya": [
+      { "code": "A", "name": "Subang Parade and Empire", "walkMinutes": 6, "stepFree": true, "landmarks": ["Subang Parade", "Empire Shopping Gallery", "Shopping"] },
+      { "code": "B", "name": "Taylors and INTI", "walkMinutes": 10, "stepFree": true, "landmarks": ["Taylors University", "INTI College", "University", "Campus"] },
+      { "code": "C", "name": "KTM Komuter Link", "walkMinutes": 2, "stepFree": true, "landmarks": ["KTM Komuter", "Komuter"] }
+    ],
+    "chan sow lin": [
+      { "code": "A", "name": "Jalan Chan Sow Lin", "walkMinutes": 4, "stepFree": true, "landmarks": ["Industrial Area", "Workshop"] },
+      { "code": "B", "name": "Interchange Concourse", "walkMinutes": 2, "stepFree": true, "landmarks": ["MRT Putrajaya Line", "LRT"] }
+    ],
+    "wangsa maju": [
+      { "code": "A", "name": "Wangsa Walk Mall", "walkMinutes": 5, "stepFree": true, "landmarks": ["Wangsa Walk", "Shopping", "Cinema"] },
+      { "code": "B", "name": "Seksyen 2 Wangsa Maju", "walkMinutes": 4, "stepFree": false, "landmarks": ["Residential", "Market"] }
+    ],
+    "taman melati": [
+      { "code": "A", "name": "TAR UMT Campus", "walkMinutes": 12, "stepFree": true, "landmarks": ["TARUMT", "Tunku Abdul Rahman University", "University", "Campus"] },
+      { "code": "B", "name": "Danau Kota", "walkMinutes": 5, "stepFree": true, "landmarks": ["Danau Kota", "Uptown Market", "Residential"] }
+    ],
+    "kuala lumpur": [
+      { "code": "A", "name": "Kuala Lumpur Railway Station", "walkMinutes": 2, "stepFree": false, "landmarks": ["Heritage Station", "Majestic Hotel"] },
+      { "code": "B", "name": "National Mosque", "walkMinutes": 6, "stepFree": true, "landmarks": ["Masjid Negara", "National Mosque", "Islamic Arts Museum"] }
+    ],
+    "ipoh": [
+      { "code": "A", "name": "Ipoh Railway Station", "walkMinutes": 2, "stepFree": true, "landmarks": ["Ipoh Heritage Station", "Majestic Hotel"] },
+      { "code": "B", "name": "Ipoh Old Town", "walkMinutes": 10, "stepFree": true, "landmarks": ["Old Town", "Concubine Lane", "White Coffee", "Food"] }
+    ],
+    "butterworth": [
+      { "code": "A", "name": "Penang Ferry Terminal", "walkMinutes": 5, "stepFree": true, "landmarks": ["Ferry Terminal", "Penang Ferry", "Georgetown"] },
+      { "code": "B", "name": "Penang Sentral", "walkMinutes": 3, "stepFree": true, "landmarks": ["Penang Sentral", "Bus Terminal"] }
+    ],
+    "jb sentral": [
+      { "code": "A", "name": "CIQ Complex", "walkMinutes": 4, "stepFree": true, "landmarks": ["CIQ", "Customs", "Singapore Causeway", "Immigration", "Woodlands"] },
+      { "code": "B", "name": "JB City Square", "walkMinutes": 3, "stepFree": true, "landmarks": ["City Square", "Shopping", "Johor Bahru Town"] }
+    ],
+    "seremban": [
+      { "code": "A", "name": "Seremban Town Centre", "walkMinutes": 5, "stepFree": true, "landmarks": ["Seremban Town", "Terminal One", "Shopping"] },
+      { "code": "B", "name": "Seremban Bus Terminal", "walkMinutes": 4, "stepFree": true, "landmarks": ["Bus Terminal"] }
+    ],
+    "alor setar": [
+      { "code": "A", "name": "Alor Setar Town", "walkMinutes": 8, "stepFree": true, "landmarks": ["Menara Alor Setar", "Zahir Mosque", "Town Centre"] }
+    ],
+    "shah alam city centre": [
+      { "code": "A", "name": "Blue Mosque", "walkMinutes": 8, "stepFree": true, "landmarks": ["Blue Mosque", "Masjid Sultan Salahuddin", "Dataran Shah Alam"] },
+      { "code": "B", "name": "SACC Mall", "walkMinutes": 4, "stepFree": true, "landmarks": ["SACC Mall", "Plaza Alam Sentral", "Shopping"] }
+    ],
+    "klang": [
+      { "code": "A", "name": "Klang Town Centre", "walkMinutes": 5, "stepFree": true, "landmarks": ["Klang Town", "Little India Klang", "Bak Kut Teh"] }
+    ]
+  }
+}
