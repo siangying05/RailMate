@@ -4,7 +4,6 @@ Smart rail navigation and ticketing for Malaysia. One app for LRT, MRT, Monorail
 
 RailMate plans a journey across the whole Malaysian rail network, tells you exactly where to change trains and whether that change happens inside the gates, predicts how crowded the trains will be from Malaysian Government open data, and issues a signed electronic ticket.
 
-BMIT2073 Mobile Application Development — Assignment, Academic Session 202605
 Sustainable Development Goal 9: Industry, Innovation and Infrastructure
 
 ---
@@ -16,9 +15,6 @@ Each member owns one folder under `lib/features/` and presents it in the final c
 | Module | Owner | Folder | Responsibility |
 | --- | --- | --- | --- |
 | **M1** User Authentication and Preferences | Goo Siang Ying | `lib/features/auth/` | Registration, sign in, email OTP, concession passenger types, route preference engine |
-| **M2** Smart Rail Route Navigation Engine | Ng Hui Yong | `lib/features/routing/` | Station search, multi criteria route planning, fare and station matrix |
-| **M3** Turn-by-Turn Guidance and Crowd Analytics | Ng Yoke Khee | `lib/features/guidance/` | Platform and direction guidance, carriage advice, crowd prediction, GPS arrival alerts |
-| **M4** Ticketing, Payment and Trip History | Ooi Chun Yuan | `lib/features/ticketing/` | Booking, simulated payment gateway, dynamic QR pass, My Trips and receipts |
 
 `lib/core/` and `lib/data/` are the shared foundation agreed by the whole team.
 
